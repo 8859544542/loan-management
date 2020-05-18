@@ -1,0 +1,46 @@
+
+<form   #data="ngForm"  
+(ngSubmit)="addLoanRequest(data)" >
+<h3>Register</h3>
+<table  style="background-color:#00FF00">
+ <tr>
+    <td> Account Id: </td>
+    <td> <input type="text" name="accountId"></td>
+ <tr>
+ 
+ <tr>
+    <td> Amount : </td>
+    <td> <input type="text" name="amount"></td>
+ <tr>
+ 
+ <tr>
+    <td> Tenure : </td>
+    <td> <input type="text" name="tenure"></td>
+ <tr>
+ 
+ <tr>
+    <td> Credit Score </td>
+    <td> <input type="text" name="creditScore"></td>
+ <tr>
+ 
+
+ <tr>
+    <td> Loan Type :</td>
+    <td>
+    <select name="type"> 
+    <option> Home </option>
+    <option> Education    </option>
+    <option> Business   </option>
+    </select>
+    </td>
+ <tr>
+ 
+  
+ 
+<tr>
+    <td> </td>
+    <td> <input type="submit" value="submit"></td>
+ <tr>
+</table>
+</form>
+

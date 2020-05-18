@@ -1,0 +1,37 @@
+
+<table style="background-color:rgb(25, 0, 255)">
+<tr>
+    <td> Loan Id: </td>
+    <td> <input type="text" name="loanId"></td>
+ <tr>
+<tr>
+<td>  </td>
+<td>  <button (click)="findLoanRequest(loanId)">Remove</button> 
+<tr>
+
+</table>
+
+
+<table border="1">
+   <tr>
+     <th>  Account Id  </th>
+
+     <th>  Amount </th>
+
+       <th> Tenure </th>
+
+       <th> credit Score </th>
+
+       <th> Loan Type </th>
+
+
+       <tr *ngIf="loan">
+         <td>{{loan.accountId}}</td> 
+         <td>{{ loan.anount.name}}</td> 
+         <td>{{loan.tenure}}</td>
+         <td>{{loan.creditScore}}</td>
+         <td>{{loan.loantype}}</td>
+         
+         
+</tr>
+</table>
